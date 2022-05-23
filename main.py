@@ -14,9 +14,6 @@ special = '!@#$%^&*()_+-=[]{},.?'
 
 total = lower + upper + numbers + special
 
-password = ''
-
-for i in range(length):
-    password += random.choice(total)
+password = "".join(random.sample(total, length))
 
 print(password)
